@@ -13,6 +13,8 @@
 		7485ECBA2A266E320057B14F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7485ECB82A266E320057B14F /* Main.storyboard */; };
 		7485ECBC2A266E360057B14F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7485ECBB2A266E360057B14F /* Assets.xcassets */; };
 		7485ECBF2A266E360057B14F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7485ECBD2A266E360057B14F /* LaunchScreen.storyboard */; };
+		7485ECC72A267CE40057B14F /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7485ECC62A267CE40057B14F /* EmojiTextFieldDelegate.swift */; };
+		7485ECC92A267D0F0057B14F /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7485ECC82A267D0F0057B14F /* ColorizerTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7485ECBB2A266E360057B14F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7485ECBE2A266E360057B14F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7485ECC02A266E360057B14F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7485ECC62A267CE40057B14F /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
+		7485ECC82A267D0F0057B14F /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				7485ECB22A266E320057B14F /* AppDelegate.swift */,
 				7485ECB42A266E320057B14F /* SceneDelegate.swift */,
 				7485ECB62A266E320057B14F /* ViewController.swift */,
+				7485ECC82A267D0F0057B14F /* ColorizerTextFieldDelegate.swift */,
+				7485ECC62A267CE40057B14F /* EmojiTextFieldDelegate.swift */,
 				7485ECB82A266E320057B14F /* Main.storyboard */,
 				7485ECBB2A266E360057B14F /* Assets.xcassets */,
 				7485ECBD2A266E360057B14F /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7485ECC92A267D0F0057B14F /* ColorizerTextFieldDelegate.swift in Sources */,
 				7485ECB72A266E320057B14F /* ViewController.swift in Sources */,
 				7485ECB32A266E320057B14F /* AppDelegate.swift in Sources */,
 				7485ECB52A266E320057B14F /* SceneDelegate.swift in Sources */,
+				7485ECC72A267CE40057B14F /* EmojiTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

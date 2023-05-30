@@ -48,7 +48,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MAS-vH-Rth" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="11W-4p-rXC"/>
                             <constraint firstItem="bfd-mO-e5k" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="401-Ag-WLe"/>
@@ -63,6 +63,12 @@
                             <constraint firstItem="xpe-ks-0hk" firstAttribute="top" secondItem="8Qt-kj-Nqz" secondAttribute="bottom" constant="8" id="vIf-LA-FEB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterCountLabel" destination="bfd-mO-e5k" id="YbK-kl-v9t"/>
+                        <outlet property="textField1" destination="8Qt-kj-Nqz" id="77H-s3-4x8"/>
+                        <outlet property="textField2" destination="xpe-ks-0hk" id="VBx-KV-SCu"/>
+                        <outlet property="textField3" destination="MAS-vH-Rth" id="xIf-li-8Tr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,9 +78,6 @@
     <resources>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
