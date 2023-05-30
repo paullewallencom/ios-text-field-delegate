@@ -8,6 +8,8 @@
 
 import UIKit
 
+// MARK: - ColorizerTextFieldDelegate: NSObject, UITextFieldDelegate
 class ColorizerTextFieldDelegate {
-    // stub
+    
+    // MARK: Properties
 }

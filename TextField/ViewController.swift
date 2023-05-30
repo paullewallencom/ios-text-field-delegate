@@ -9,7 +9,6 @@
 import UIKit
 
 // MARK: - ViewController: UIViewController, UITextFieldDelegate
-
 class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Outlets
@@ -35,6 +34,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: Text Field Delegate Methods
-    // stub
+    func textField() {
+        //stub
+    }
 }
 

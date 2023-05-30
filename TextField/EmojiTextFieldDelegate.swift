@@ -8,6 +8,9 @@
 
 import UIKit
 
+// MARK: - EmojiTextFieldDelegate : NSObject, UITextFieldDelegate
 class EmojiTextFieldDelegate {
-    // stub
+    
+    // MARK: Properties
+    // MARK: Initializer
 }
