@@ -30,6 +30,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // Set the three delegates
         self.textField1.delegate = emojiDelegate
+        self.textField2.delegate = colorizeDelegate
+        self.textField3.delegate = self
     }
     
     // MARK: Text Field Delegate Methods
