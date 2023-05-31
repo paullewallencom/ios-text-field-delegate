@@ -40,12 +40,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNl-nV-vj2" userLabel="Text Field 04">
+                                <rect key="frame" x="8" y="272" width="333" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FLs-jD-mq2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfd-mO-e5k" userLabel="Char Counter">
                                 <rect key="frame" x="191" y="198" width="32" height="58"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="48"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Fz-qQ-aLU">
+                                <rect key="frame" x="357" y="272" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,8 +68,13 @@
                             <constraint firstItem="xpe-ks-0hk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="GLQ-Ke-07I"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Qt-kj-Nqz" secondAttribute="trailing" constant="8" id="Onz-px-4nc"/>
                             <constraint firstItem="8Qt-kj-Nqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="SgQ-mi-XSv"/>
+                            <constraint firstItem="kNl-nV-vj2" firstAttribute="top" secondItem="bfd-mO-e5k" secondAttribute="bottom" constant="16" id="Vsz-Dn-6xA"/>
+                            <constraint firstItem="kNl-nV-vj2" firstAttribute="trailing" secondItem="1Fz-qQ-aLU" secondAttribute="leading" constant="-16" id="a5Z-6q-q5Z"/>
+                            <constraint firstItem="1Fz-qQ-aLU" firstAttribute="top" secondItem="bfd-mO-e5k" secondAttribute="bottom" constant="16" id="aA3-uj-Y2c"/>
                             <constraint firstItem="8Qt-kj-Nqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="ign-NS-o8B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MAS-vH-Rth" secondAttribute="trailing" constant="8" id="l4L-kH-L2W"/>
+                            <constraint firstItem="kNl-nV-vj2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="lKu-UM-w1i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Fz-qQ-aLU" secondAttribute="trailing" constant="8" id="oqa-BU-yqP"/>
                             <constraint firstItem="MAS-vH-Rth" firstAttribute="top" secondItem="xpe-ks-0hk" secondAttribute="bottom" constant="8" id="t6h-XQ-JU5"/>
                             <constraint firstItem="xpe-ks-0hk" firstAttribute="top" secondItem="8Qt-kj-Nqz" secondAttribute="bottom" constant="8" id="vIf-LA-FEB"/>
                         </constraints>
