@@ -15,12 +15,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textField2: UITextField!
     @IBOutlet weak var textField3: UITextField!
+    @IBOutlet weak var textField4: UITextField!
     @IBOutlet weak var characterCountLabel: UILabel!
+    @IBOutlet weak var editingSwitch: UISwitch!
     
     // MARK: Text Field Delegate objects
-    let emojiDelegate = EmojiTextFieldDelegate()
+    //let emojiDelegate = EmojiTextFieldDelegate()
     //let colorizerDelegate = ColorizerTextFieldDelegate()
     let randomColorTextFieldDelegate = RandomColorTextFieldDelegate()
+    let zipCodeDelegate = ZipCodeTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
     
     // MARK: Life Cycle
     override func viewDidLoad() {
@@ -30,10 +34,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.characterCountLabel.isHidden = true
         
         // Set the three delegates
-        self.textField1.delegate = emojiDelegate
+        //self.textField1.delegate = emojiDelegate
+        self.textField1.delegate = zipCodeDelegate
         //self.textField2.delegate = colorizerDelegate
+        self.textField2.delegate = cashDelegate
         self.textField2.delegate = randomColorTextFieldDelegate
         self.textField3.delegate = self
+        
+        self.editingSwitch.setOn(false, animated: false)
     }
     
     // MARK: Text Field Delegate Methods
@@ -53,5 +61,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true;
     }
     
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return self.editingSwitch.isOn
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         
+        return true;
+    }
+    
+    // MARK: Actions
+    @IBAction func toggleTheTextEditor(_ sender: AnyObject) {
+        
+        if !(sender as! UISwitch).isOn {
+            self.textField4.resignFirstResponder()
+        }
+    }
 }
