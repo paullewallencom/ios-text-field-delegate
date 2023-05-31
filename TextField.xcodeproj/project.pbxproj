@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74316C5C2A26C8CE00A0659C /* Text Field Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				7485ECC82A267D0F0057B14F /* ColorizerTextFieldDelegate.swift */,
+				7485ECC62A267CE40057B14F /* EmojiTextFieldDelegate.swift */,
+			);
+			path = "Text Field Delegates";
+			sourceTree = "<group>";
+		};
 		7485ECA62A266E320057B14F = {
 			isa = PBXGroup;
 			children = (
@@ -63,8 +72,7 @@
 				7485ECB22A266E320057B14F /* AppDelegate.swift */,
 				7485ECB42A266E320057B14F /* SceneDelegate.swift */,
 				7485ECB62A266E320057B14F /* ViewController.swift */,
-				7485ECC82A267D0F0057B14F /* ColorizerTextFieldDelegate.swift */,
-				7485ECC62A267CE40057B14F /* EmojiTextFieldDelegate.swift */,
+				74316C5C2A26C8CE00A0659C /* Text Field Delegates */,
 				7485ECB82A266E320057B14F /* Main.storyboard */,
 				7485ECBB2A266E360057B14F /* Assets.xcassets */,
 				7485ECBD2A266E360057B14F /* LaunchScreen.storyboard */,
