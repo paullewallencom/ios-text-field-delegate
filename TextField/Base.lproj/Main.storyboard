@@ -22,7 +22,10 @@
                                     <constraint firstAttribute="height" constant="30" id="EpQ-CB-E96"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="00a-9Z-bhw"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-ks-0hk" userLabel="Text Field 02">
                                 <rect key="frame" x="8" y="114" width="398" height="30"/>
@@ -31,6 +34,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="SCa-Ow-cyy"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAS-vH-Rth" userLabel="Text Field 03">
                                 <rect key="frame" x="8" y="152" width="398" height="30"/>
@@ -39,6 +45,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3mY-YD-wPS"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNl-nV-vj2" userLabel="Text Field 04">
                                 <rect key="frame" x="8" y="272" width="333" height="30"/>
@@ -47,6 +56,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="UhI-cy-cjz"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfd-mO-e5k" userLabel="Char Counter">
                                 <rect key="frame" x="191" y="198" width="32" height="58"/>
@@ -81,9 +93,11 @@
                     </view>
                     <connections>
                         <outlet property="characterCountLabel" destination="bfd-mO-e5k" id="YbK-kl-v9t"/>
+                        <outlet property="editingSwitch" destination="1Fz-qQ-aLU" id="9Rn-ey-Kh1"/>
                         <outlet property="textField1" destination="8Qt-kj-Nqz" id="77H-s3-4x8"/>
                         <outlet property="textField2" destination="xpe-ks-0hk" id="VBx-KV-SCu"/>
                         <outlet property="textField3" destination="MAS-vH-Rth" id="xIf-li-8Tr"/>
+                        <outlet property="textField4" destination="kNl-nV-vj2" id="JUC-wG-mtd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

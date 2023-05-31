@@ -38,8 +38,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.textField1.delegate = zipCodeDelegate
         //self.textField2.delegate = colorizerDelegate
         self.textField2.delegate = cashDelegate
-        self.textField2.delegate = randomColorTextFieldDelegate
-        self.textField3.delegate = self
+        self.textField3.delegate = randomColorTextFieldDelegate
+        self.textField4.delegate = self
         
         self.editingSwitch.setOn(false, animated: false)
     }
