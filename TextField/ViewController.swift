@@ -76,6 +76,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         if !(sender as! UISwitch).isOn {
             self.textField4.resignFirstResponder()
+            self.editingSwitch.isOn = false
+        } else {
+            self.editingSwitch.isOn = true
         }
     }
 }

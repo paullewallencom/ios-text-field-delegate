@@ -50,8 +50,9 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNl-nV-vj2" userLabel="Text Field 04">
-                                <rect key="frame" x="8" y="272" width="333" height="30"/>
+                                <rect key="frame" x="8" y="272" width="200" height="30"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1jQ-E4-SsH"/>
                                     <constraint firstAttribute="height" constant="30" id="FLs-jD-mq2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -67,7 +68,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Fz-qQ-aLU">
-                                <rect key="frame" x="357" y="272" width="51" height="31"/>
+                                <rect key="frame" x="224" y="272" width="184" height="31"/>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
